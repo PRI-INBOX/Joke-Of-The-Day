@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOKE GENERATOR</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }  
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background:linear-gradient(rgba(173, 216, 230, 0.808),rgba(127, 255, 212, 0.747),#ffc0cbd2,#f391a1d2,rgba(126, 92, 126, 0.795));
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .joke-box{
+        width: 50vw;
+        height: 10vw;
+        padding: 2vw;
+        border: 1px solid grey;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4);
+        align-self: center;
+        color: #ffff;
+        background-color: rgb(143, 143, 216);
+    }
+    .joke-box h1{
+        font-size: 1.8vmax;
+        font-weight: 100;
+        font-family: futura;
+        text-align: center;
+        color: rgb(240, 178, 21);
+    }
+    .joke-box p{
+        font-size: 2.2vmax;
+        margin: 1vw;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    @media screen and (max-width:800px) {
+        .joke-box{
+            width: 75vw;
+            height: 45vw;
+            line-height: 8vw;
+            padding:4vw;
+        }
+        .joke-box h1{
+            font-size: 3vmax;
+            font-weight: 500;
+        }
+        .container{
+        width: 100vw;
+        height: 100vh;
+    }
+        
+    }
+</style>
+<body>
+        <div class="container">
+    <div class="joke-box">
+        <h1>JOKE OF THE DAY</h1>
+        <p class="joke"></p>
+    </div>
+</div>
+    
+</body>
+<script src="index.js"></script>
+</html>
